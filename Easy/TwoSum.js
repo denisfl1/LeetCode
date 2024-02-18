@@ -47,7 +47,6 @@ function twoSum(nums, target) {
             if(positions.has(calc)){
                 return [i,positions.get(calc)]
             }
-
             positions.set(nums[i],i)
             
         }
