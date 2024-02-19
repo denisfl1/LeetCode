@@ -31,9 +31,9 @@
 
 // Acompanhamento: Você consegue criar um algoritmo com complexidade de tempo menor que O(n2)?
 // let nums = [3,2,4]
-let nums = [2,7,11,15]
-// let nums = [3,3]
-let alvo = 9
+// let nums = [2,7,11,15]
+let nums = [3,3]
+let alvo = 6
 function twoSum(nums, target) {
     let arr = nums.length 
     let alvo = target
@@ -45,14 +45,14 @@ function twoSum(nums, target) {
             calc = alvo - nums[i] 
 
             if(positions.has(calc)){
-                return [i,positions.get(calc)]
+                console.log([i,positions.get(calc)])
             }
             positions.set(nums[i],i)
             
         }
 
 
-       return console.log(positions)
+       
 }
 
 twoSum(nums,alvo)
