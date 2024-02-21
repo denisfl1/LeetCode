@@ -1,4 +1,4 @@
-let nums = [1,3,5,6], target = 7
+let nums = [1,3,5,6], target = 2
 
 
 var searchInsert = function(nums, target) {
@@ -12,7 +12,7 @@ var searchInsert = function(nums, target) {
         }
 
         if(!nums.includes(target)){
-            i + 1
+      
             nums.push(target)
             nums.sort((a,b)=>a-b)
 
