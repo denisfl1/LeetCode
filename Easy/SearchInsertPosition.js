@@ -11,7 +11,7 @@ var searchInsert = function(nums, target) {
         nums.sort((a,b)=>{return a-b})
         
         }
-        console.log(nums[i])
+
 
     }
   
