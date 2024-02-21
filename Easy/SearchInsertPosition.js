@@ -12,7 +12,7 @@ var searchInsert = function(nums, target) {
         
         }
         console.log(nums[i])
-        // console.log(index)
+        console.log(index)
     }
   
     
