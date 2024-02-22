@@ -1,19 +1,11 @@
  digits = [1,2,9]
 
 def plusOne (digits)
-    position = (digits.size) -1
 
-            digits[position] = digits[position] + 1
+  x = (digits.join.to_i + 1).to_s.split('').map(&:to_i)
 
-            if(digits[position] > 9)
-              digits = digits.join('').chars.map(&:to_i)
+puts x
 
-                digits = digits.select{|it|it != ','}.map{|str|str}
+end
 
-            end
-
-            puts digits
-
-          end
-
-plusOne(digits)
+puts plusOne(digits)

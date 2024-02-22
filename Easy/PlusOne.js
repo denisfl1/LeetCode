@@ -1,18 +1,18 @@
 let digits = [1,2,9]
 
 var plusOne = function(digits) {
-    position = digits.length -1
 
-            digits[position] = digits[position] + 1
+    for(let i = digits.length - 1;i>=0;i--){
+        if(digits[i] === 9){
+            digits[i] = 0
+        }else{
+            digits[i]++
+           
+        }
+    }
+    digits.unshift(1)
+    console.log(digits)
 
-            if(digits[position] > 9){
-                digits = String(digits).split('')
-                
-                digits = digits.filter((it)=>it != ',').map(str => parseInt(str, 10))
-                                  
-            }
-
-            console.log(digits)
 }
 
 plusOne(digits)
