@@ -6,9 +6,9 @@ def plusOne (digits)
             digits[position] = digits[position] + 1
 
             if(digits[position] > 9)
-                digits = String(digits).split('')
+              digits = digits.join('').chars.map(&:to_i)
 
-
+                digits = digits.select{|it|it != ','}.map{|str|str}
 
             end
 
