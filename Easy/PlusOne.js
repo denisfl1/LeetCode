@@ -1,5 +1,5 @@
 let digits = [1,2,9]
-const x = ["1","2","3","4","5"]
+
 var plusOne = function(digits) {
 
     for(let i = digits.length - 1;i>=0;i--){
