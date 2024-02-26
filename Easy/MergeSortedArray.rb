@@ -16,7 +16,7 @@ def merge (nums1, m, nums2, n)
         end
 
         if(nums1[first]>nums2[second])
-          nums1[i] = nums1[first];
+          nums1[i] = nums1[first]
           first-=1
 
         else

@@ -42,25 +42,39 @@ let nums2 = [2,5,6]
 let n = 3
 
 
- function merge (nums1, m, nums2, n) {
+x = [1,2,3,0,0,0]
+
+x = [2,5,6]
+    
+// z = [1,2,3,0,0,0]
+//       1 2 2 3 5 6
+
+// Ele faz um loop de percorrendo o array de trás para frente
+// Se satisfazer as condições ele decrementa de um em um colocando os números 
+// nas suas devidas posições de acordo com o index que está sendo percorrido no momento
+
+ function merge (nums1,m,nums2,n) {
     let first = m - 1
     let second = n - 1
 
-    for(let i= m + n - 1;i >=0; i--){
+    for(let i = m + n - 1;i>=0;i--){
 
         if(second < 0){
             break
         }
-        if(nums1[first]>nums2[second]){
-            nums1[i] = nums1[first];
-            first--
+
+        if(nums1[first] > nums2[second]){
+            nums1[i] = nums1[first]
+            first --
         }else{
             nums1[i] = nums2[second]
-            second--
+            second --
         }
 
+       
     }
+    
     console.log(nums1)
         
 }
-merge(nums1, m, nums2, n)
+merge(nums1,m,nums2,n)
