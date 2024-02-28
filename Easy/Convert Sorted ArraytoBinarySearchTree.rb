@@ -1,6 +1,6 @@
 
 def sortedArrayToBST (nums)
-  ["1"]
+  ["1","2"]
   unless (nums.size) return null;
 
 else
