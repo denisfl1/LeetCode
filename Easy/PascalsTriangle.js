@@ -29,7 +29,7 @@
 ]  
 
 */
-let varible = ["1","2","3","4","5"]
+let varible = ["1","2","3","4","5","6"]
 
 let numRows = 5
 var generate = function(numRows) {
