@@ -17,16 +17,19 @@
 /* Saída: 
 
      ans => [
+
            [1]
           [1,1],  
 rows => [1,2,1],
         [1,3,3,1]
        [1,4,6,4,1]
-
+        
+    ] 
 
      row[j] = ans[i - 1][j] + ans[i - 1][j - 1]
-
-]  
+      
+     row[j] recebe o ans i - 1 na posição do [j] + ans i - 1 na posição [j - 1]
+ 
 
 */
 
