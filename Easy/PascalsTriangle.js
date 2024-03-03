@@ -29,7 +29,7 @@ rows => [1,2,1],
 ]  
 
 */
-const x = ["1","2","3","4"]
+const x = ["1","2","3","4","5"]
 
 let numRows = 5
 var generate = function(numRows) {
