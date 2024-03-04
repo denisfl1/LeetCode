@@ -41,11 +41,11 @@ var generate = function(numRows) {
     
     for (let i = 0; i < numRows; i++) {
         let row = new Array(i + 1).fill(1)
-       
+      
        for (let j = 1; j < i; j++) {
            
             row[j] = ans[i - 1][j] + ans[i - 1][j - 1]
-            console.log(row[j])
+            console.log(i)
         }
         ans.push(row)
     
