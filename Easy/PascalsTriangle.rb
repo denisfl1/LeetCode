@@ -17,7 +17,7 @@ def generate (numRows)
 
       end
 
-
+      puts row
 
   end
 

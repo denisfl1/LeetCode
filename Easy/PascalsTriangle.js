@@ -45,14 +45,14 @@ var generate = function(numRows) {
        for (let j = 1; j < i; j++) {
            
             row[j] = ans[i - 1][j] + ans[i - 1][j - 1]
-            console.log(i)
+          
         }
         ans.push(row)
     
     }
     
  
- 
+    console.log(ans)
 
 }
 
