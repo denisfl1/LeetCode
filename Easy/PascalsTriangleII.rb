@@ -9,7 +9,7 @@ def get_row(row_index)
 
   end
 
-  for i in 0...(row_index).size
+  for i in 0..(row_index)
     row = Array.new(i + 1).fill(1)
 
       for j in 1...(i)
