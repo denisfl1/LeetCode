@@ -11,13 +11,13 @@ def generate (numRows)
        for j in 1...(i)
 
             row[j] = ans[i - 1][j] + ans[i - 1][j - 1]
-           puts row[j]
+
         end
         ans.push(row)
 
       end
 
-      puts row
+      puts ans
 
   end
 

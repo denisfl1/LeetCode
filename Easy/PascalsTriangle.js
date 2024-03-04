@@ -33,7 +33,6 @@ rows => [1,2,1],
 
 */
 
-
 let numRows = 5
 var generate = function(numRows) {
 
