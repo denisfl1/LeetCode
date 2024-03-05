@@ -25,34 +25,45 @@
 // 0 <= preços[i] <= 104
 
 let prices = [7,1,5,3,6,4]
+// let prices = [7,1,5,3,6,4]
 
 var maxProfit = function(prices) {
     let buy  = 0
     let sale = []
 
-    let order = []
+    let order = ''
     let orderFirst = 0
     let orderLast = 0
-    let num = 1
+    let num = 0
     let first = 0
-    let last =  1
+    let last =  0
 
         for(let i = 0;i<prices.length;i++){
-            order.push(prices[i])
+            order = new Array(i + 1).fill(0)
+             
+                if(prices[first] != num){
+                    first++       
 
-                if(last == prices.length - 1){
-                    break
-                }
-
-                if(order[first] > prices[last]){
-                    order[i] = order[first]
-                    first++
-                    last++
-                  
+                
                 }else{
-                    order[i] = order[last]
-               
+                    order[num] = prices[first]
+                    first++
+                    num++
                 }
+                
+                // if(last && first > 5){
+                //     break
+                // }
+
+                // if(order[first] > prices[last]){
+                //     order[i] = order[first]
+                //     first++
+                  
+                  
+                // }else{
+                //     order[i] = order[last]
+                //     last++
+                // }
             
             
     //         order.push(prices[i])
@@ -73,13 +84,13 @@ var maxProfit = function(prices) {
     //                 sale.sort((a,b)=>b-a)
     //             }
                   
-    //         }
+    //         }3
 
     //         if(prices[i] == sale[0]){
     //             sale = i + 1
     //         }
         }
-      console.log(prices)
+      console.log(order)
 }
 
 
