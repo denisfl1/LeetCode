@@ -44,7 +44,7 @@ var maxProfit = function(prices) {
     
     }
 
-    // console.log(profit)
+    console.log(profit)
 
 }
 
