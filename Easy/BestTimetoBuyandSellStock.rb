@@ -19,7 +19,7 @@ def maxProfit(prices)
 
         if(prices[i] - minValue > preValue)
 
-            preValue = prices[i] - minValue
+          preValue = prices[i] - minValue
 
         end
 

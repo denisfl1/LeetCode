@@ -26,7 +26,7 @@
 
 // let prices = [7,6,4,3,1]
 let prices = [7,1,5,3,6,4]
-// let prices = [7,1,5,3,6,4]
+
 
 var maxProfit = function(prices) {
     let profit = 0
@@ -39,13 +39,12 @@ var maxProfit = function(prices) {
 
         if(prices[i] - low > profit){
             profit = prices[i] - low
-           
+                    
         }
     
     }
-
+   
     console.log(profit)
-
 }
 
 
