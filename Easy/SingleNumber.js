@@ -15,14 +15,12 @@ var singleNumber = function(nums) {
            
             
             if(nums.length == 1){
-
                 arr = nums[i]
-
-            }         
-            arr.reverse()
+            }       
+           
         }
-      
-
+        arr.reverse()
+        console.log(num)
        
 }
 
