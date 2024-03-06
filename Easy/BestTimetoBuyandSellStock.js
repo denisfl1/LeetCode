@@ -24,8 +24,8 @@
 // 1 <= preços.comprimento <= 105
 // 0 <= preços[i] <= 104
 
-// let prices = [7,6,4,3,1]
-let prices = [7,1,5,3,6,4]
+let prices = [7,6,4,3,1]
+// let prices = [7,1,5,3,6,4]
 
 
 var maxProfit = function(prices) {
