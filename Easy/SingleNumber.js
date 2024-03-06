@@ -12,24 +12,18 @@ var singleNumber = function(nums) {
 
         for(let i=0;i<nums.length;i++){
             arr.push(nums[i])
+           
             
             if(nums.length == 1){
 
                 arr = nums[i]
 
-            }else{
-                arr.reverse()
-                console.log(nums[i] % arr[i] > 0 && i)
-                // if(nums[i] % arr[i] != 0){
-                //     num = nums[i]
-                // }
-            }
-
-           
-
+            }         
+            arr.reverse()
         }
+      
+
        
-        // console.log(num)
 }
 
 singleNumber(nums)
