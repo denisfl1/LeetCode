@@ -23,16 +23,15 @@ var singleNumber = function(nums) {
             num --
 
             if(arr[i] == nums[i]){
-                arr2.push(nums[i])
-                            
-            }            
-    
+                arr2.push(nums[i])                      
+            }
 
         }
 
         if(nums.length == 1){
             arr = nums[0]
         }
+
 
         console.log(arr2)
 
