@@ -11,7 +11,7 @@ let nums =  [2,2,1]
 //   [2,1,2,1,4]
 
 
-let a = ["1","2","3","4","5"]
+let a = ["1","2","3","4","5","6"]
 
 
 var singleNumber = function(nums) {
