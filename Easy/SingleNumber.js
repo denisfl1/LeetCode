@@ -1,39 +1,36 @@
 
-let nums =  [2,2,1]
+let nums = [1,3,1,-1,3]
+//         [1,3,1,-1,3]
+//         [3,-1,1,3,1]
+//         [3,-1,1,3,1]
+
 //   [4,1,2,1,2] 
 //   [4,1,2,1,2]
-//   [4,1,2,1,2] 
+//   [2,1,2,1,4]
+
+//  11224
+//  11224
+//  42211
 
 // [2,2,1]
+// [2,2,1]
 // [1,2,2]
-
-//   [4,1,2,1,2] 
-//   [2,1,2,1,4]
+//   [2]
 
 
 
 var singleNumber = function(nums) {
-    let arr = []
-    let arr2 = []
-    let num = nums.length - 1
+
+    let result = 0;
+
+    for (let i = 0; i < nums.length; i++) {
+        result ^= nums[i];
+    }
 
 
-        for(let i=0;i<nums.length;i++){
-            arr[num] = nums[i]
-            num --
-
-            if(arr[i] == nums[i]){
-                arr2.push(nums[i])                      
-            }
-
-        }
-
-        if(nums.length == 1){
-            arr = nums[0]
-        }
+     console.log(result)
 
 
-        console.log(arr2)
 
 }
 
