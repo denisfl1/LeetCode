@@ -32,7 +32,7 @@ let nums = [1,3,1,-1,3]
 
 // [2,2,1]
 
-const x = [1,2,3,4,5]
+const x = [1,2,3,4,5,6]
 
 var singleNumber = function(nums) {
 
