@@ -14,7 +14,7 @@
 // Input: nums = [2,2,1,1,1,2,2]
 // Output: 2
 
-let a  = [1]
+let a  = [1,2]
 
   let nums = [2,2,1,1,1,2,2]
 //let nums = [3,2,3]
