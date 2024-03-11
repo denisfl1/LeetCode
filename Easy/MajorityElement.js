@@ -14,28 +14,30 @@
 // Input: nums = [2,2,1,1,1,2,2]
 // Output: 2
 
+let nums = [5,5,5,5,2,2,2]
+              
 
-//let nums = [2,2,1,1,1,2,2]
-//let nums = [3,2,3]
+// let nums = [2,2,1,1,1,2,2]
+// let nums = [3,2,3]
 
 var majorityElement = function(nums) {
     
-    let count = 0
     let required_number = 0
-    for(let i of nums){
-        if(count === 0){
-            required_number = i
-        }
-        if(i !== required_number){
-            count = count - 1
-        }else{
-            count = count + 1
-        }
+    let arr = {}
+
+    for(let i = 0;i<nums.length;i++){
+        
+            if(!arr[nums[i]]) {
+                arr[nums[i]] = []
+            }
+            arr[nums[i]].push(i)
+
+            if(arr[nums[i]].length > nums.length/2){
+                required_number = nums[i]
+            }
+    
     }
-
     console.log(required_number)
-       
-}
-
+}   
 
 majorityElement(nums)
