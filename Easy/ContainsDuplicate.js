@@ -23,8 +23,6 @@ var containsDuplicate = function(nums) {
     let obj = {}
     let arr = []
 
-    nums.sort((a,b)=>a-b)
-
     for(let i = 0;i<nums.length;i++){
          
         if(!obj[nums[i]]) {
