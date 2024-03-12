@@ -27,14 +27,14 @@ var majorityElement = function(nums) {
 
     for(let i = 0;i<nums.length;i++){
         
-            if(!arr[nums[i]]) {
-                arr[nums[i]] = []
-            }
+        if(!arr[nums[i]]) {
+            arr[nums[i]] = []
+        }
             arr[nums[i]].push(i)
 
-            if(arr[nums[i]].length > nums.length/2){
-                required_number = nums[i]
-            }
+        if(arr[nums[i]].length > nums.length/2){
+            required_number = nums[i]
+        }
     
     }
     console.log(required_number)
