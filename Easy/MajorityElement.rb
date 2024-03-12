@@ -7,6 +7,6 @@ def majorityElement(nums)
     nums.sort
     puts nums[nums.size.floor()/2]
 
-  end
+end
 
 majorityElement(nums)
