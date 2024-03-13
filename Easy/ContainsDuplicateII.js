@@ -26,30 +26,19 @@
 
 let nums  = [1,0,1,1]
 let k = 1
-let even = null
+
 
 var containsNearbyDuplicate = function(nums, k) {
-    let obj = {}
-    let arr = []
-  
-    for(let i = 0; i<nums.length;i++){
+    const obj = {}
 
-        if(!obj[nums[i]]){
-            obj[nums[i]] = []
+    for (let i = 0; i < nums.length; i++) {
+        if (obj[nums[i]] >= 0 && Math.abs(obj[nums[i]] - i) <= k) {
+            return true
         }
-        
-        obj[nums[i]].push(i)
- 
-
-        if(obj[nums[i]].length > 1){
-
-            arr = obj[nums[i]]
-           
-        }
-            
+        obj[nums[i]] = i
     }
-      
-    console.log(arr)
+    return false
+        
 }
 
 containsNearbyDuplicate(nums,k)
