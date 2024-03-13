@@ -47,7 +47,7 @@ var containsNearbyDuplicate = function(nums, k) {
         
     }
         
-    let x  = [1,2]
+    let x  = [1,2,3]
 }
 
 containsNearbyDuplicate(nums,k)
