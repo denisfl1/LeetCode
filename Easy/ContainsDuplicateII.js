@@ -24,12 +24,13 @@
 // -109 <= num[i] <= 109
 // 0 <= k <= 105
 
-let nums  = [1,2,3,1,2,3]
-k = 2
+let nums  = [1,0,1,1]
+let k = 1
+let even = null
 
 var containsNearbyDuplicate = function(nums, k) {
     let obj = {}
-    let arr = ''
+    let arr = []
   
     for(let i = 0; i<nums.length;i++){
 
@@ -41,13 +42,14 @@ var containsNearbyDuplicate = function(nums, k) {
  
 
         if(obj[nums[i]].length > 1){
-            arr = obj[nums[i]]
-            
-        }
-        
-    }
-        
 
+            arr = obj[nums[i]]
+           
+        }
+            
+    }
+      
+    console.log(arr)
 }
 
 containsNearbyDuplicate(nums,k)
