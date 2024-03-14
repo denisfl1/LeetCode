@@ -47,7 +47,7 @@ var summary_ranges = function (nums){
 
     }
     console.log(arr)
-    const x = [1]
+    const x = [1,2]
 }   
     
 
