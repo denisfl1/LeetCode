@@ -30,23 +30,31 @@
 // [6,6] --> "6"
 // [8,9] --> "8->9"
 
+// let nums = [0,2,3,4,6,8,9]
+// let nums = [0,2,3,4,6,8,9]
+
 let nums = [0,2,3,4,6,8,9]
 
 var summary_ranges = function (nums){
-    let arr = []
+    let arr  = []
 
-    for(let i = 0;i<nums.length - 1;i++){
+    for(let i = 0;i<nums.length;i++){
         let start = nums[i]
+        
+         while(i+ 1<nums.length && nums[i] + 1 == nums[i + 1]){
+            i++
+         }
 
-        if(start + 1 === nums[i + 1]){
-           i+=1
-        }
-        if(start != nums[i]){
-            arr.push(nums[i] + "-->" + nums[i])
-        }
+         if(start != nums[i]){
+            arr.push(`${start}-->${nums[i]}`)
+         }else{
+            arr.push(`${start}`)
+         }
+
 
     }
-    console.log(arr)
+    
+        console.log(arr)
     
 }   
     
