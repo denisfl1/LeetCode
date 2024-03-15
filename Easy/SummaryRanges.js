@@ -50,6 +50,6 @@ var summary_ranges = function (nums){
     
 }   
     
-const x  = [1,2,3,4,5]
+const x  = [1,2,3,4,5,6]
 
 summary_ranges(nums)
