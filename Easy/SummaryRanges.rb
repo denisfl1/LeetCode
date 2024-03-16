@@ -4,9 +4,9 @@ nums = [0,2,3,4,6,8,9]
 
 def summary_ranges(nums)
   arr = []
-  i = 0
 
- for i in nums.size
+  i = 0
+  while i < nums.size
       start = nums[i]
 
       while i + 1 < nums.size && nums[i] + 1 == nums[i + 1]

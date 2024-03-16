@@ -46,7 +46,7 @@ var summary_ranges = function (nums){
          }
 
          if(start != nums[i]){
-            arr.push(`${start}-->${nums[i]}`)
+            arr.push(`${start}->${nums[i]}`)
          }else{
             arr.push(`${start}`)
          }
@@ -54,7 +54,7 @@ var summary_ranges = function (nums){
 
     }
     
-        console.log(arr)
+    console.log(arr)
     
 }   
     
