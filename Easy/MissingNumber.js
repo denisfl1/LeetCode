@@ -35,7 +35,7 @@ var missingNumber = function(nums) {
     let sum2 = nums.reduce((a,b)=> a+b)
 
     console.log(sum-sum2)
-    const x  = [1,2]
+    const x  = [1,2,3]
 }
 
 missingNumber(nums)
