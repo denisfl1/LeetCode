@@ -1,12 +1,11 @@
 
-let nums = [0,1,0,3,12,8,5,4]
+let nums = [0,1,0,3,12]
 
 var moveZeroes = function(nums) {
 
     let left = 0
     let right = nums.length - 1
     let arr = []
-    nums.sort((a,b)=>a-b)
 
     for(let i=0;i<nums.length;i++){
         if(nums[i] != 0){
