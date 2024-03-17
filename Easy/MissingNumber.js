@@ -27,7 +27,7 @@
 // 0 <= num[i] <= n
 // Todos os números de nums são únicos.
 
-let nums = [0,1]
+let nums = [9,6,4,2,3,5,7,0,1]
 var missingNumber = function(nums) {
     
     let size = nums.length

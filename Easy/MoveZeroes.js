@@ -1,0 +1,25 @@
+
+let nums = [0,1,0,3,12,8,5,4]
+
+var moveZeroes = function(nums) {
+
+    let left = 0
+    let right = nums.length - 1
+    let arr = []
+    nums.sort((a,b)=>a-b)
+
+    for(let i=0;i<nums.length;i++){
+        if(nums[i] != 0){
+          arr[left] = nums[i]
+          left++
+        }else{
+            arr[right] = nums[i]
+            right--
+        }  
+
+    }
+
+    console.log(arr)
+}       
+
+moveZeroes(nums)
