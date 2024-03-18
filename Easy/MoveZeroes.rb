@@ -14,7 +14,7 @@ def moveZeroes (nums)
       end
 
       puts nums.inspect
-      value = [1]
+      value = [1,2]
 end
 
 moveZeroes(nums)
