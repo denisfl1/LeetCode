@@ -12,7 +12,6 @@ var numberOfSteps = function(num) {
     
     console.log(val)
 
-
 }
 
 numberOfSteps(num)
