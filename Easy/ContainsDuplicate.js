@@ -33,9 +33,7 @@ var containsDuplicate = function(nums) {
 
         arr.push(obj[nums[i]].length)
       
-        if(arr[0] != arr[i]){
-            result = true
-        }
+        result = arr[0] != arr[i]
     
     }
     
