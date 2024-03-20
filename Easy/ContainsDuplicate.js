@@ -33,13 +33,15 @@ var containsDuplicate = function(nums) {
 
         arr.push(obj[nums[i]].length)
       
-        result = arr[0] != arr[i]
+        if(arr[0] != arr[i]){
+            result = true
+        }
     
     }
     
     console.log(result)
 
-
+    const x  = [1]
 }
 
 containsDuplicate(nums)
