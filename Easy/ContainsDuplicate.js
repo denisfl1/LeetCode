@@ -40,7 +40,7 @@ var containsDuplicate = function(nums) {
     }
     
     console.log(result)
-    const x = [1]
+    const x = [1,2]
 }
 
 containsDuplicate(nums)
