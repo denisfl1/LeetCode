@@ -32,7 +32,7 @@
 // 0 <= esquerda <= direita < nums.length
 // Serão feitas no máximo 104 chamadas para sumRange.
 
-const x  = [1,2]
+const x  = [1,2,3]
 
 var NumArray = function(nums) {
     
