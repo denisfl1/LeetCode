@@ -45,10 +45,10 @@ NumArray.prototype.sumRange = function(left, right) {
         sum+=array[left];
         left++;
     }
-    return sum
+    console.log(sum)
 }
 
-const arr = new NumArray([1, 2, 3, 4, 5])
-const limit = arr.sumRange(1, 3);
+new NumArray([1, 2, 3, 4, 5]).sumRange(1, 3);
 
-console.log(limit)
+
+
