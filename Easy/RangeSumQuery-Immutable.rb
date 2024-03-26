@@ -1,22 +1,23 @@
 
   class NumArray
 
-      def initialize(nums)
-        @nums = nums
-      end
+        def initialize(nums)
+          @nums = nums
+        end
 
-    def sumRange(left, right)
-      array = @nums
-      sum = 0
+        def sumRange(left, right)
 
-    while left <= right
-        sum+=array[left]
-        left+=1
-    end
+            array = @nums
+            sum = 0
 
-    puts sum
+          while left <= right
+              sum+=array[left]
+              left+=1
+          end
 
-    end
+              puts sum
+
+        end
 
   end
 
