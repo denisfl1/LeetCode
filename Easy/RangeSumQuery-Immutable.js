@@ -33,9 +33,22 @@
 // Serão feitas no máximo 104 chamadas para sumRange.
 
 
-
-var NumArray = function(nums) {
-    
-
-
+var NumArray  = function(nums) {
+    this.nums = nums
 }
+
+NumArray.prototype.sumRange = function(left, right) {
+    var array = this.nums
+    let sum = 0
+
+    while(left <= right){
+        sum+=array[left];
+        left++;
+    }
+    return sum
+}
+
+const arr = new NumArray([1, 2, 3, 4, 5])
+const limit = arr.sumRange(1, 3);
+
+console.log(limit)
