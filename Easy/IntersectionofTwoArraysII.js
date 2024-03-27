@@ -21,7 +21,7 @@
 // 1 <= nums1.comprimento, nums2.comprimento <= 1000
 // 0 <= nums1[i], nums2[i] <= 1000
 
-const x  = [1,2,3,4]
+const x  = [1,2,3,4,5]
 
 var intersect = function(nums1,nums2) {
     
