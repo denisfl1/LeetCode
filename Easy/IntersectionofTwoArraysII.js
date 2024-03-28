@@ -1,7 +1,8 @@
 
 
 // Dadas duas matrizes inteiras nums1 e nums2, retorne uma matriz de sua interseção. 
-// Cada elemento no resultado deve aparecer quantas vezes for mostrado em ambos os arrays e você pode retornar o resultado em qualquer ordem.
+// Cada elemento no resultado deve aparecer quantas vezes for mostrado em ambos os arrays
+// e você pode retornar o resultado em qualquer ordem.
 
  
 
@@ -24,16 +25,17 @@
 
 var intersect = function(nums1,nums2) {
     
-    let arrA = new Map()
-    let arrB = new Map()
-    let arr  = []
+    let result = []
+    for (let num of nums1) {
 
-    // for(const i of arrA){
-    //     if(arrB.has(i))arr.push(i)
-    // }
-    arrA.set(...nums1,1)
-    
-    console.log(arrA.get(1))
-}
+    if(nums2.includes(num)){
+        result.push(num)
+        nums2.splice(nums2.indexOf(num),1)
 
-intersect([1,2,2,1],[2,2])
+    }
+  }
+
+  console.log(result)
+
+}   
+intersect([4,9,5],[9,4,9,8,4])
