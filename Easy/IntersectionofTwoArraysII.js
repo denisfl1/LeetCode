@@ -27,7 +27,7 @@ var intersect = function(nums1,nums2) {
     let arrA = new Map()
     let arrB = new Map()
     let arr  = []
-    let x  = [1,2,3,4]
+    let x  = [1,2,3,4,5]
     // for(const i of arrA){
     //     if(arrB.has(i))arr.push(i)
     // }
