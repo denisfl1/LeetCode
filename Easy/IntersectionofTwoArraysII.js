@@ -24,15 +24,16 @@
 
 var intersect = function(nums1,nums2) {
     
-    let arrA = new Map(nums1)
-    let arrB = new Map(nums2)
+    let arrA = new Map()
+    let arrB = new Map()
     let arr  = []
-
-    for(const i of arrA){
-        if(arrB.has(i))arr.push(i)
-    }
-
-    console.log(arr)
+    let x  = [1]
+    // for(const i of arrA){
+    //     if(arrB.has(i))arr.push(i)
+    // }
+    arrA.set(...nums1,1)
+    
+    console.log(arrA.get(1))
 }
 
 intersect([1,2,2,1],[2,2])
