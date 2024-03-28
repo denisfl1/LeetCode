@@ -4,6 +4,7 @@
 def intersect(nums1,nums2)
 
     result = []
+
     for num in nums1
 
     if (nums2.include?(num))
@@ -17,4 +18,5 @@ def intersect(nums1,nums2)
   puts result.inspect
 
 end
+
 intersect([4,9,5],[9,4,9,8,4])
