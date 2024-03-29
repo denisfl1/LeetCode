@@ -34,21 +34,22 @@
 // 1 <= nums.comprimento <= 104
 // -231 <= num[i] <= 231 - 1
 
-let nums  = [3,2,1]
+let nums  = [1,2]
 
 var thirdMax = function(nums) {
 
-    const position = nums.length - 1
-    let arr  = [...nums]
-    let max  = [nums[position]]
+    let output = 0
+    let set = new Set(nums)
+    nums = Array.from(set)
+    nums.sort((a,b)=> b-a)
 
-    arr.sort((a,b)=>a-b)
-
-    if(max != arr[Math.floor(nums.length - 1/ 2)]){
-        console.log(arr[Math.floor(nums.length - 1/ 2)])
+    if(nums.length < 3){
+        output = nums[0]
+    }else{
+        output = nums[2]
     }
-   
-      
-};
+
+    console.log(output)
+}
 
 thirdMax(nums)
