@@ -48,7 +48,7 @@ var thirdMax = function(nums) {
         console.log(arr[Math.floor(nums.length - 1/ 2)])
     }
    
-    const x = [1,2,3,4,5]
+    const x = [1,2,3,4,5,6]
       
 };
 
