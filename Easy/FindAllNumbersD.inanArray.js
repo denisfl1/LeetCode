@@ -35,7 +35,7 @@ var findDisappearedNumbers = function(nums) {
     
     nums.sort((a,b)=>a-b)
     let x  = []
-    const z = [1,2,3,4,5,6,7,8]
+    const z = [1,2,3,4,5,6,7,8,9]
         for(let i=nums[0];i<nums.length;i++){
 
             if(!nums.includes(i)){
