@@ -29,7 +29,7 @@
 // Acompanhamento: Você poderia fazer isso sem espaço extra e em tempo de execução O(n)? 
 // Você pode assumir que a lista retornada não conta como espaço extra.
 
-let nums  =  [4,3,2,7,8,2,3,1]
+let nums  =  [1,1]
 
 var findDisappearedNumbers = function(nums) {
     
