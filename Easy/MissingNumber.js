@@ -1,6 +1,7 @@
 
 
-// Dado um array nums contendo n números distintos no intervalo [0, n], retorne o único número no intervalo que está faltando no array.
+// Dado um array nums contendo n números distintos no intervalo [0, n], 
+// retorne o único número no intervalo que está faltando no array.
 
 
 // Exemplo 1:

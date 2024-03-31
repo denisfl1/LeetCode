@@ -39,7 +39,7 @@ var findDisappearedNumbers = function(nums) {
             result.push(i)
         }
     }
-    console.log(result)
+    console.log(set)
 }
 
 
