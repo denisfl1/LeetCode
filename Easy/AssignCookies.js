@@ -31,7 +31,33 @@
 // 0 <= s.comprimento <= 3 * 104
 // 1 <= g[i], s[j] <= 231 - 1
 
+let g  = [1,2]
+let s  = [1,2,3]
+
+var findContentChildren = function(g, s) {
+    
+    g.sort((a,b)=>a-b)
+    s.sort((a,b)=>a-b)
+
+    let i = 0
+    let j = 0
+    let result = 0
+
+    while(i<g.length && j<s.length){
+
+            if(g[i]<=s[j]){
+                i++
+                result++
+            }
+                j++
+                   
+        }
+    console.log(result)
+
+}
+
+findContentChildren(g,s)
 
 
-const x = [1,2]
+
 
