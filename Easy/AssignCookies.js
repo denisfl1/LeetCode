@@ -34,7 +34,7 @@
 let g  = [1,2]
 let s  = [1,2,3]
 
-var findContentChildren = function(g, s) {
+var findContentChildren = function(g,s) {
     
     g.sort((a,b)=>a-b)
     s.sort((a,b)=>a-b)
@@ -49,9 +49,9 @@ var findContentChildren = function(g, s) {
                 i++
                 result++
             }
-                j++
+            j++
                    
-        }
+    }
     console.log(result)
 
 }
