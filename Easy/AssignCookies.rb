@@ -2,8 +2,8 @@
 
 def findContentChildren(g,s)
 
-    g.sort!
-    s.sort!
+    g.sort
+    s.sort
 
     i = 0
     j = 0
