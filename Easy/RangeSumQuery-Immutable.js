@@ -42,13 +42,13 @@ NumArray.prototype.sumRange = function(left, right) {
     let sum = 0
 
     while(left <= right){
-        sum+=array[left];
-        left++;
+        sum+=array[left]
+        left++
     }
     console.log(sum)
 }
 
-new NumArray([1, 2, 3, 4, 5]).sumRange(1, 3);
+new NumArray([1, 2, 3, 4, 5]).sumRange(1, 3)
 
 
 

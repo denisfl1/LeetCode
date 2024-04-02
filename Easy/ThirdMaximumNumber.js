@@ -1,6 +1,7 @@
 
 
-// Dado um array inteiro nums, retorne o terceiro número máximo distinto neste array. Se o terceiro máximo não existir, retorne o número máximo.
+// Dado um array inteiro nums, retorne o terceiro número máximo distinto neste array. 
+// Se o terceiro máximo não existir, retorne o número máximo.
 
  
 // Exemplo 1:
