@@ -24,7 +24,7 @@
 // Saída: 4
 
 // [[1,1]]
-let grid  =  [[1,1]]
+let grid  =  [[0,1,0,0],[1,1,1,0],[0,1,0,0],[1,1,0,0]]
 
 
 var islandPerimeter = function(grid) {
