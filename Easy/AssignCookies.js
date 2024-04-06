@@ -53,7 +53,7 @@ var findContentChildren = function(g,s) {
                    
     }
     console.log(result)
-    const x  = [1,2,3]
+    const x  = [1,2,3,4]
 }
 
 findContentChildren(g,s)
