@@ -35,19 +35,32 @@
 // Todos os números inteiros de nums1 também aparecem em nums2.
 
 
-let nums1 = [2,4], nums2 = [1,2,3,4]
+let nums1 = [4,1,2], nums2 = [1,3,4,2]
 
 var nextGreaterElement = function(nums1, nums2) {
 
     let arr = []  
+    
+      for(i of nums1){
 
-      for(let i=0;i<nums2.length; i++){
+        for(let j = 0;j<nums2.length - 1;j++){
 
+            if(nums2[j] == i + 1){
+                arr.push(nums2[j])
 
+            }
+        
+        
+        }
+
+        if(!nums2.includes( i + 1)){
+            arr.push(-1)
+        }
+        
 
       }
 
-
+      const x  = [1]
     console.log(arr)
 }
 
