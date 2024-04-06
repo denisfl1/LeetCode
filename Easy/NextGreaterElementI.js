@@ -60,7 +60,7 @@ var nextGreaterElement = function(nums1, nums2) {
 
       }
 
-      const x  = [1,2]
+      const x  = [1,2,3]
     console.log(arr)
 }
 
