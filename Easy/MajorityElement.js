@@ -1,7 +1,7 @@
-// Given an array nums of size n, return the majority element.
+// Dado um array nums de tamanho n, retorna o elemento majoritário.
 
-// The majority element is the element that appears more than ⌊n / 2⌋ times. 
-// You may assume that the majority element always exists in the array.
+// O elemento majoritário é o elemento que aparece mais de ⌊n/2⌋ vezes.
+// Você pode assumir que o elemento majoritário sempre existe no array.
 
 
 // Example 1:
