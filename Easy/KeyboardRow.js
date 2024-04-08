@@ -40,7 +40,7 @@ var findWords = function(words) {
        }
        return true;
     }
-const x = [1,2,3,4,5]
+
 }
 
 
