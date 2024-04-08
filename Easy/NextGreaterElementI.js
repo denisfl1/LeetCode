@@ -49,7 +49,7 @@ var nextGreaterElement = function(nums1, nums2) {
         return -1;
     })
     console.log(greaterNums)
-    const x = [1,2]
+    const x = [1,2,3]
 }
 
 
