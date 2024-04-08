@@ -39,28 +39,17 @@ let nums1 = [4,1,2], nums2 = [1,3,4,2]
 
 var nextGreaterElement = function(nums1, nums2) {
 
-    let arr = []  
-    
-      for(i of nums1){
-
-        for(let j = 0;j<nums2.length - 1;j++){
-
-            if(nums2[j] == i + 1){
-                arr.push(nums2[j])
-
+    const loopLength = nums2.length - 1;
+    const greaterNums = nums1.map(num => {
+        for (let i = nums2.indexOf(num); i <= loopLength; i++) {
+            if (nums2[i] > num) {
+                return nums2[i];
             }
-        
-        
         }
-
-        if(!nums2.includes( i + 1)){
-            arr.push(-1)
-        }
-        
-
-      }
-
-    console.log(arr)
+        return -1;
+    })
+    console.log(greaterNums)
+    const x = [1]
 }
 
 
