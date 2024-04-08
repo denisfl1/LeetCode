@@ -35,21 +35,20 @@
 // Todos os números inteiros de nums1 também aparecem em nums2.
 
 
-let nums1 = [4,1,2], nums2 = [1,3,4,2]
+let nums1 = [2,4], nums2 = [1,2,3,4]
 
 var nextGreaterElement = function(nums1, nums2) {
 
-    const loopLength = nums2.length - 1;
+    const loopLength = nums2.length - 1
     const greaterNums = nums1.map(num => {
         for (let i = nums2.indexOf(num); i <= loopLength; i++) {
             if (nums2[i] > num) {
-                return nums2[i];
+                return nums2[i]
             }
         }
-        return -1;
+        return -1
     })
-    console.log(greaterNums)
-  
+    return greaterNums;
 }
 
 
