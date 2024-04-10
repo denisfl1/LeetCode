@@ -30,7 +30,7 @@
 var find_relative_ranks = function(score){
 
 
-const x = [1,2]
+const x = [1,2,3]
 
 }
     
