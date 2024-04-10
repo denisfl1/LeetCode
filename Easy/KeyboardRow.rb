@@ -24,5 +24,4 @@ def compare(word, row)
 end
 
 words = ["Hello", "Alaska", "Dad", "Peace"]
-result = findWords(words)
-puts result.inspect
+puts findWords(words).inspect
