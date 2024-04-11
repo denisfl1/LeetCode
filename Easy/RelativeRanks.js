@@ -19,7 +19,7 @@
  
 // Exemplo 1:
 
-// Entrada: pontuação = [5,4,3,2,1]
+// Entrada:     
 // Resultado: ["Medalha de Ouro","Medalha de Prata","Medalha de Bronze","4","5"]
 // Explicação: As colocações são [1ª, 2ª, 3ª, 4ª, 5ª].
 // Exemplo 2:
@@ -41,7 +41,7 @@ var find_relative_ranks = function(score){
         if(index == 2)return "Bronze medal"
         return index+1+""
     })
-
+    const x = [1]
     return positions
 }
     
