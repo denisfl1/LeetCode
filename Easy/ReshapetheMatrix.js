@@ -18,7 +18,7 @@ var matrixReshape = function(mat, r, c) {
  
     let size  = mat.length
 
-    const x  = [1,2,3]
+    const x  = [1,2,3,4]
 
  
     
