@@ -42,7 +42,6 @@ var find_relative_ranks = function(score){
         return index+1+""
     })
     
-    const x  = [1,2,3,4,5,6,7,8]
 
     return positions
 }
