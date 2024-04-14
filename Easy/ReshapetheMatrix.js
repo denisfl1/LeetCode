@@ -31,5 +31,5 @@ var matrixReshape = function(mat, r, c) {
         //     }
         // }
 
-    const x = [1]
+    const x = [1,2]
 }
