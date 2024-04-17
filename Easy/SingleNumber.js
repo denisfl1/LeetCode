@@ -43,7 +43,7 @@ var singleNumber = function(nums) {
 
 
      console.log(result)
-
+    const x = [1]
 
 }
 
