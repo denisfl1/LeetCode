@@ -35,7 +35,7 @@ def matrix_reshape(mat, r, c)
 
 end
 
-x = [1,2,3,4]
+x = [1,2,3,4,5]
 
 mat = [[1,2],[3,4]], r = 2, c = 4
 
