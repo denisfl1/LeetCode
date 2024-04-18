@@ -1,4 +1,6 @@
 
+// Input: mat = [[1,2],[3,4]], r = 1, c = 4
+// Output: [[1,2,3,4]]
 
 // No MATLAB, existe uma função útil chamada reshape, 
 // que pode remodelar uma matriz m x n em uma nova com tamanho diferente r x c, 
@@ -14,22 +16,41 @@
 // produza a nova matriz remodelada; Caso contrário, produza a matriz original.
 
 
-var matrixReshape = function(mat, r, c) {
+var matrixReshape = function(mat,r,c) {
  
     let rows = mat.length
-    let collumns = nums[0].length
-    let output = new Array()
+    let collumns = mat[0].length
+    let output = new Array(r)
 
-        if(rows * collumns != r * c)return rows
 
+        if((rows * collumns) != (r * c))return mat
+
+        for(let i =0;i<r;i++){
+            output[i] = new Array(c)
+        }
         let row_num = 0
         let collumn_num = 0
 
-        // for(let i = 0;i<rows;i++){
-        //     for(let j =0;j<collumns;j++){
-        //         collumn_num[row_num][collumn_num] = 
-        //     }
-        // }
+        for(let i=0;i<rows;i++){
+       
+            for(let j=0;j<collumns;j++){
+                output[row_num][collumn_num] = mat[i][j]
+                collumn_num++
 
+                if(collumn_num == c){
+                    collumn_num = 0
+                    row_num++
+                }
+            }
+        }
+
+        console.log(output)
     
 }
+
+
+
+let mat = [[1,2],[3,4]]
+let r = 1, c = 4
+
+matrixReshape(mat,r,c)
