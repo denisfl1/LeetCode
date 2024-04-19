@@ -33,7 +33,15 @@
 
 var distributeCandies = function(candyType) {
     
+    // let init  =  candyType[0]
+    let sum  = 0
+
+    for(let i = 0;i<=candyType.length;i++){
+      sum = i
+    }
+
+    console.log(sum)
 }
 
-
+let candyType = [1,1,2,2,3,3]
 distributeCandies(candyType)
