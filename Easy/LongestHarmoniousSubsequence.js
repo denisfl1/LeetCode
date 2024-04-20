@@ -27,7 +27,7 @@
 
 
 var findLHS = function(nums) {
-    const x  = [1,2]
+    const x  = [1,2,3]
 }
 
 findLHS(nums)
