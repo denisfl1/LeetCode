@@ -38,5 +38,5 @@ var distributeCandies = function(candyType) {
     console.log(calc)
 }
 
-let candyType = [1,1,1,2,2,2]
+let candyType = [1,1,2,3]
 distributeCandies(candyType)
