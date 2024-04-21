@@ -33,7 +33,6 @@ let timeSeries = [1,4], duração = 2
 
 var findPoisonedDuration = function(timeSeries, duration) {
     
-    const x = [1,2,3,4]
 
 
 
