@@ -20,8 +20,8 @@
 
 // Entrada: nums = [1,2,3,4]
 // Saída: 2
-// Exemplo 3:
 
+// Exemplo 3:
 // Entrada: nums = [1,1,1,1]
 // Saída: 0
 
