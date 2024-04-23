@@ -14,6 +14,7 @@ def findWords(words)
   end
 
   return res
+
 end
 
 def compare(word, row)

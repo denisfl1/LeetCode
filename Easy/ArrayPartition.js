@@ -37,3 +37,4 @@ var arrayPairSum = function(nums) {
 
 let nums =  [6,2,6,5,1,2]
 arrayPairSum(nums)
+
