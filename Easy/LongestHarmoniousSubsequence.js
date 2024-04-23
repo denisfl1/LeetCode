@@ -29,22 +29,24 @@
 var findLHS = function(nums) {
   
     let ans = 0
-    let numbers = new Map()
+    let numbers = new Map(0)
 
     for (let i of nums) {
-        numbers.set(i, (numbers.get(i) || 0) + 1)
-       
+        numbers.set(i, (numbers.get(i)) + 1)
+    
+     
     }
    
     for (let [key, value] of numbers.entries()) {
       if (numbers.has(key + 1)) {
-        ans = Math.max(0, numbers.get(key + 1) + value)
+        
+        ans = Math.max(ans, numbers.get(key + 1) + value)
+    
       }
-    console.log(key + 1,value)
 
     }
 
-    // return console.log(ans)
+    return console.log(ans)
 
 }
 
