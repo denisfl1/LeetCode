@@ -45,7 +45,7 @@ var findLHS = function(nums) {
     }
 
     // return console.log(ans)
-    let a  = [1,2,3]
+    let a  = [1,2,3,4]
 }
 
 let nums = [1,3,2,2,5,2,3,7]
