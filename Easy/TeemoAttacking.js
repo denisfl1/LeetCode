@@ -29,11 +29,10 @@
 // Ashe é envenenado pelos segundos 2 e 3.
 // Ashe é envenenado pelos segundos 1, 2 e 3, o que equivale a 3 segundos no total.
 
-let timeSeries = [1,4], duração = 2
+let timeSeries = [1], duração = 2
 
 var findPoisonedDuration = function(timeSeries, duration) {
     
-
 
 
 }
