@@ -9,12 +9,12 @@ def longest_common_prefix(strs)
 
         for i in 1...strs.size
           while strs[i].index(prefix) != 0
-            prefix = prefix[0...-1]
+            prefix = prefix[0...prefix.length - 1]
 
           end
         end
 
-        prefix
+       puts prefix
 
   end
 
