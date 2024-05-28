@@ -31,24 +31,25 @@ var findLHS = function(nums) {
     let ans = 0
     let numbers = new Map()
 
-    for (let i of nums) {
-        numbers.set(i, (numbers.get(i) || 0) + 1)
-        
+    for (let i of nums) { 
+  
+        numbers.set(i, (numbers.get(i) || 0) + 1) // se não tiver ele inicia com 1 se tiver ele incrementa + 1
+       
     }
    
-    for (let [key, value] of numbers.entries()) {
-      if (numbers.has(key + 1)) {
+    for (let [key, value] of numbers.entries()) { // varre tanto a chave quanto o valor
+      if (numbers.has(key + 1)) { // verifica se tem mais de um número diferente  se tiver faz a contagem 
 
-        ans = Math.max(ans, numbers.get(key + 1) + value)
+        ans = Math.max(ans, numbers.get(key + 1)+ value)
 
       }
    
     }
 
     return console.log(ans)
-
+ 
 }
 
-let nums =  [1,2,3,4]
+let nums =   [1,2,3,4]
 
 findLHS(nums)
