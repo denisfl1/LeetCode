@@ -8,7 +8,7 @@ def findLHS(nums)
 
     for i in nums
 
-     numbers[i] += 1
+     numbers[i] = (numbers[i] || 0) + 1
 
     end
 
@@ -16,7 +16,7 @@ def findLHS(nums)
 
       if numbers.include?(key + 1)
 
-        ans = [0,obj[key + 1] + value].max
+        ans = [0,numbers[key + 1] + value].max
 
       end
 
