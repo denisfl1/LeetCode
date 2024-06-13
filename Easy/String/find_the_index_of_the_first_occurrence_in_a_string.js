@@ -1,28 +1,31 @@
 
+// Dadas duas strings agulha e palheiro, 
+// retorne o índice da primeira ocorrência de agulha no palheiro, ou -1 se a agulha não fizer parte do palheiro.
 
-// Dada uma string s contendo apenas os caracteres '(', ')', '{', '}', '[' e ']', 
-// determine se a string de entrada é válida.
-
-// Uma string de entrada é válida se:
-
-// Os colchetes abertos devem ser fechados pelo mesmo tipo de colchetes.
-// Os colchetes abertos devem ser fechados na ordem correta.
-// Cada colchete fechado possui um colchete aberto correspondente do mesmo tipo.
 
 
 // Exemplo 1:
 
-// Entrada: s = "()"
-// Saída: verdadeiro
+// Entrada: palheiro = "sadbutsad", agulha = "sad"
+// Saída: 0
+// Explicação: “sad” ocorre nos índices 0 e 6.
+// A primeira ocorrência está no índice 0, então retornamos 0.
 // Exemplo 2:
 
-// Entrada: s = "()[]{}"
-// Saída: verdadeiro
-// Exemplo 3:
+// Entrada: palheiro = "leetcode", agulha = "leeto"
+// Saída: -1
+// Explicação: “leeto” não ocorreu em “leetcode”, então retornamos -1.
 
-// Entrada: s = "(]"
-// Saída: falso
 
 var strStr = function(haystack, needle) {
-    
-};
+
+    const index = haystack.indexOf(needle);
+    console.log(index)
+
+
+}
+
+let haystack = "sadbutsad", needle = "sad"
+
+strStr(haystack,needle)
+
