@@ -3,8 +3,9 @@
 
 def strStr (haystack, needle)
 
-    index = haystack.index(needle)
-    puts index
+    indexOF = haystack.index(needle)
+
+    puts indexOF
 
 
 end
