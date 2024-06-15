@@ -26,5 +26,15 @@
 
 
 var lengthOfLastWord = function(s) {
+
+  const word = s
+  const last_string = word.split(' ')
+  
+  console.log(last_string[last_string.length -1].length)
+
     
-};
+}
+
+const s = "Olá mundo"
+
+lengthOfLastWord(s)
