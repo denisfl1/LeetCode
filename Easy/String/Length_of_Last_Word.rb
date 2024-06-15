@@ -8,3 +8,6 @@ def length_of_last_word(s)
   last_string.last.size
 
 end
+
+s = "Hello World"
+length_of_last_word(s)
