@@ -8,4 +8,6 @@ def addBinary (a,b)
 
 end
 
+  a = "11"
+  b = "1"
   sum.to_s(2)
