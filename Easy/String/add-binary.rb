@@ -1,6 +1,6 @@
 
 
-def strStr (haystack, needle)
+def addBinary (a,b)
   a_bin = a.to_i(2)
   b_bin = b.to_i(2)
 
