@@ -1,28 +1,28 @@
 
-// A phrase is a palindrome if, 
-// after converting all uppercase letters into lowercase letters and removing all 
-// non-alphanumeric characters, it reads the same forward and backward.
-// Alphanumeric characters include letters and numbers.
+// Uma frase é um palíndromo se,
+//depois de converter todas as letras maiúsculas em minúsculas e remover todas
+// caracteres não alfanuméricos, ele lê o mesmo para frente e para trás.
+// Caracteres alfanuméricos incluem letras e números.
 
-// Given a string s, return true if it is a palindrome, or false otherwise.
+// Dada uma string s, retorne verdadeiro se for um palíndromo, ou falso caso contrário.
 
- 
-// Example 1:
 
-// Input: s = "A man, a plan, a canal: Panama"
-// Output: true
-// Explanation: "amanaplanacanalpanama" is a palindrome.
-// Example 2:
+// Exemplo 1:
 
-// Input: s = "race a car"
-// Output: false
-// Explanation: "raceacar" is not a palindrome.
-// Example 3:
+// Entrada: s = "Um homem, um plano, um canal: Panamá"
+//Saída: verdadeiro
+// Explicação: "amanaplanacanalpanama" é um palíndromo.
+// Exemplo 2:
 
-// Input: s = " "
-// Output: true
-// Explanation: s is an empty string "" after removing non-alphanumeric characters.
-// Since an empty string reads the same forward and backward, it is a palindrome.
+// Entrada: s = "correr um carro"
+//Saída: falso
+// Explicação: "raceacar" não é um palíndromo.
+// Exemplo 3:
+
+// Entrada: s = " "
+//Saída: verdadeiro
+// Explicação: s é uma string vazia "" após a remoção de caracteres não alfanuméricos.
+// Como uma string vazia lê a mesma coisa para frente e para trás, ela é um palíndromo.
 
 
 var isPalindrome = function(s) {
@@ -38,5 +38,5 @@ return verify(word.toLowerCase())
 
 const s = "race a car"
 
-isPalindrome(s)
+console.log(isPalindrome(s))
 
