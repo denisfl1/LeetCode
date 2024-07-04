@@ -1,29 +1,34 @@
 
 
-// Given an integer columnNumber, 
-// return its corresponding column title as it appears in an Excel sheet.
+// Dado um número inteiro colunaNumber,
+// retorna o título da coluna correspondente conforme aparece em uma planilha do Excel.
 
-// For example:
+// Por exemplo:
 
-// A -> 1
+//A -> 1
 // B -> 2
-// C -> 3
+//C -> 3
 // ...
 // Z -> 26
-// AA -> 27
-// AB -> 28 
+//AA -> 27
+// AB -> 28
 // ...
- 
 
-// Example 1:
 
-// Input: columnNumber = 1
-// Output: "A"
-// Example 2:
+// Exemplo 1:
 
-// Input: columnNumber = 28
-// Output: "AB"
-// Example 3:
+// Entrada: númerocoluna = 1
+//Saída: "A"
+// Exemplo 2:
 
-// Input: columnNumber = 701
-// Output: "ZY"
+// Entrada: númerocoluna = 28
+//Saída: "AB"
+// Exemplo 3:
+
+// Entrada: númerocoluna = 701
+//Saída: "ZY"
+
+var convertToTitle = function(columnNumber) {
+    
+}
+
