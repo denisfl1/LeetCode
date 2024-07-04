@@ -32,17 +32,16 @@ var isIsomorphic = function(s, t) {
     let objT={}
     for(let i=0;i<s.length;i++){
 
-        if(objS[s[i]] && (objS[s[i]]!==t[i])) return false
+        if(objS[s[i]] && (objS[s[i]]!==t[i])) return console.log(false)
         objS[s[i]]=t[i]
 
-        if(objT[t[i]] && (objT[t[i]]!==s[i])) return false
-        
+        if(objT[t[i]] && (objT[t[i]]!==s[i])) return console.log(false)    
         objT[t[i]]=s[i]
     }
-    console.log(objS)
-    console.log(objT)
-    return true
+
+    return console.log(true)
+
     
 };
-let s = "paper", t = "title"
+let s = "foo", t = "bar"
 isIsomorphic(s,t)
