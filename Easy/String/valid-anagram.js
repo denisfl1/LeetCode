@@ -1,4 +1,21 @@
 
+// Dadas duas strings s e t, retorne verdadeiro se t for um anagrama de s, 
+// e falso caso contrário.
+
+// Um Anagrama é uma palavra ou frase formada pela reorganização das letras de uma palavra ou frase diferente, 
+// normalmente usando todas as letras originais exatamente uma vez.
+
+
+
+// Exemplo 1:
+
+// Entrada: s = "anagrama", t = "nagaram"
+// Saída: verdadeiro
+// Exemplo 2:
+
+// Entrada: s = "rato", t = "carro"
+// Saída: falso
+
 
 var isAnagram = function(s, t) {
     
@@ -12,7 +29,7 @@ var isAnagram = function(s, t) {
             if(char1[i] !== char2[i])return console.log(false)
 
         }
-        console.log(true)
+       return  console.log(true)
 
 };
 
