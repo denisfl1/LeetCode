@@ -6,11 +6,10 @@ def wordPattern (pattern,s)
 char = s.split(" ")
 arr1 = ''
 arr2 = ''
-sum = ''
 
-if pattern.size != char.size
-  puts false
-else
+    if(pattern.size != char.size)
+      puts false
+    else
 
     for i in 0...pattern.size
 
@@ -20,11 +19,10 @@ else
       arr2 += char.index(char[i]).to_s
       break
     end
-
-    sum = arr1 == arr2
   end
 
-  puts sum
+  puts arr1 === arr2
+
 end
 
 end

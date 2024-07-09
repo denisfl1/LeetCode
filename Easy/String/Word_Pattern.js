@@ -26,7 +26,6 @@ var wordPattern = function(pattern, s) {
     let char = s.split(" ")
     let arr1 = ''
     let arr2 = ''
-    let sum = ''
 
     if(pattern.length !== char.length)return console.log(false)
 
@@ -41,11 +40,9 @@ var wordPattern = function(pattern, s) {
                 break
            }
 
-           sum = arr1 === arr2
-
         }
 
-        console.log(sum)
+        console.log(arr1 === arr2)  
     
 }
 let patter = "abba", s = "dog cat cat fish"
