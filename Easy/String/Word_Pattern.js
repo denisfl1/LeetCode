@@ -24,24 +24,24 @@
 var wordPattern = function(pattern, s) {
 
     let char = s.split(" ")
-    let char1 = ''
-    let char2 = ''
+    let arr1 = ''
+    let arr2 = ''
     let sum = ''
 
     if(pattern.length !== char.length)return console.log(false)
 
         for(let i = 0;i<pattern.length;i++){
 
-            char1 += pattern.indexOf(pattern[i])
+            arr1 += pattern.indexOf(pattern[i])
 
            while(i < pattern.length){
 
-                char2 += char.indexOf(char[i])
+                arr2 += char.indexOf(char[i])
 
                 break
            }
 
-           sum = char1 === char2
+           sum = arr1 === arr2
 
         }
 
