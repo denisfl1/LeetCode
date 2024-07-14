@@ -18,19 +18,10 @@
 
 var reverseVowels = function(s) {
 
-    const vogais = ["a","e","i","o","u"]
-    const word = s.split("")
-    let set = new Set(word)
-    
-    let index = 0
-    let string = ''
+    const word1 = s.match(/[aeiou]/gi) // Match Deixa apenas as vogais
+    const word2 = s.replace(/[aeiou]/gi,()=>word1.pop()) // Substitui as vogais de trás pra frente
 
-
-        for(let i = 0;i<word.length;i++){
-            
-                
-        }
-
+    console.log(word2)
 
 };
 
