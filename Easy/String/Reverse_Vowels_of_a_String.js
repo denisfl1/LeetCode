@@ -19,7 +19,7 @@
 var reverseVowels = function(s) {
 
     const word1 = s.match(/[aeiou]/gi) // Match Deixa apenas as vogais
-    const word2 = s.replace(/[aeiou]/gi,()=>word1.pop()) // Substitui as vogais de trás pra frente
+    const word2 = s.replace(/[aeiou]/gi,()=>word1.pop()) // 'pop()' Substitui as vogais de trás pra frente removendo a última vogal 
 
     console.log(word2)
 
