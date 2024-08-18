@@ -23,7 +23,6 @@
 var isSubsequence = function(s, t) {
 
     let word = s.split('')
-    console.log(word)
 
     for(let val of t){
         
