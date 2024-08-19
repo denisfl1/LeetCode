@@ -28,7 +28,11 @@
 
 
 var findLUSlength = function(a, b) {
-    
+    if(a === b)return console.log(-1)
+        return console.log( Math.max(a.length,b.length))
+
 };
+
+findLUSlength("aaa","aaa")
 
 
