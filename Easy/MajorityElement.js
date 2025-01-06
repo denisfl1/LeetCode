@@ -21,22 +21,32 @@ let nums = [5,5,5,5,2,2,2]
 // let nums = [3,2,3]
 
 var majorityElement = function(nums) {
-    
+
     let required_number = 0
-    let arr = {}
-
-    for(let i = 0;i<nums.length;i++){
-        
-        if(!arr[nums[i]]) {
-            arr[nums[i]] = []
-        }
-            arr[nums[i]].push(i)
-
-        if(arr[nums[i]].length > nums.length/2){
-            required_number = nums[i]
-        }
+    // let obj = {}
     
-    }
+    //Método 1
+
+    nums.sort((a,b)=>a-b)
+    required_number = nums[Math.floor(nums.length / 2)]
+
+
+   // --------------------
+
+    //Método 2
+
+    // for(let i = 0;i<nums.length;i++){
+        
+    //     if(!obj[nums[i]]) {
+    //         obj[nums[i]] = []
+    //     }
+    //         obj[nums[i]].push(i)
+
+    //     if(obj[nums[i]].length > nums.length/2){
+    //         required_number = nums[i]
+    //     }
+    
+    // }
     console.log(required_number)
 }   
 
